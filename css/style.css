@@ -83,3 +83,8 @@ body{
         display: none;
     }
 }
+@media (max-width: 480px){
+    .contenido{
+        width: 100%;
+    }
+}
