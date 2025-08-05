@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd;
+}
+.contenido{
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contenido .locion{
+    border-radius: 15px 0px 0px 15px;
+    background-image: url("../images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contenido .perfume{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 0px 15px 15px 0px;
+}
+.contenido .perfume .titulo{
+    margin-top: 20px;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.contenido .perfume .resumen{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.contenido .perfume .parrafo{
+    margin: 15px 0;
+}
+.contenido .perfume .parrafo, .contenido .perfume .resumen, .contenido .perfume .precioAnterior{
+    color: #6c7289;
+}
+.contenido .perfume .precios{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.contenido .perfume .precios .precioAnterior{
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+.contenido .perfume .precios .precioActual{
+    color: #3B8268;
+    font-size: 2.5rem;
+}
+.contenido .perfume .add{
+    width: 100%;
+    background-color: #3B8268;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+@media (max-width: 900px){
+    .contenido{
+        grid-template-columns: 1fr;
+    }
+    .contenido .locion{
+        background-image: url("../images/image-product-mobile.jpg");
+        height: 50vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .contenido .perfume{
+        border-radius: 0;
+    }
+    .contenido .perfume .parrafo br, .contenido .perfume .titulo br{
+        display: none;
+    }
+}
