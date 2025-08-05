@@ -67,6 +67,9 @@ body{
     cursor: pointer;
     border-radius: 10px;
 }
+.contenido .perfume .add:hover{
+    background-color: #1b4133;
+}
 @media (max-width: 900px){
     .contenido{
         grid-template-columns: 1fr;
